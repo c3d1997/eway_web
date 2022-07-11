@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eway</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="introduce">
+        <div class="container">
+            <div class="introduce_title">
+                <h1>There is no one </h1>
+                <h2>who loves pain</h2>
+            </div>
+            <div class="introduce_from">
+                <div class="eway_btn" id="scroll_btn" onclick="scrolltoF()">
+                    <p>FROM</p>
+                </div>
+
+            </div>
+            <div class="introduce_content_box">
+                <div class="introduce_content">
+                    <div class="introduce_content_title">
+                        <img src="./imgs/cactus.png" alt="">
+                        <h3>paragraph</h3><img src="./imgs/cactus.png" alt="">
+                    </div>
+                    <div class="introduce_content_txt">
+                        <ul>
+                            <li>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="introduce_content">
+                    <div class="introduce_content_title">
+                        <img src="./imgs/cactus.png" alt="">
+                        <h3>paragraph</h3><img src="./imgs/cactus.png" alt="">
+                    </div>
+                    <div class="introduce_content_txt">
+                        <ul>
+                            <li>
+                                Quisque sodales leo <span>vitae vulputate auctor.</span>
+                            </li>
+                            <li>
+                                Proin ac justo ut nisl tincidunt imperdiet.Maecenas viverra libero a pellentesque blandit.
+                            </li>
+                            <li>
+                                Cras tristique tellus id leo bibendum, eu dapibus nisl accumsan.
+                            </li>
+                            <li>
+                                Donec ultrices sapien <span>vitae leo venenatis ullamcorper.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="boat_top pos_a">
+                    <img src="./imgs/sup.svg" alt="">
+                </div>
+                <div class="boat_use_top pos_a">
+                    <img src="./imgs/船槳.png" alt="">
+                </div>
+                <div class="boat_pop pos_a">
+                    <img src="./imgs/泡泡.svg" alt="">
+                </div>
+                <div class="boat_down pos_a">
+                    <img src="./imgs/sup.png" alt="">
+                </div>
+                <div class="boat_down_fire pos_a">
+                    <img src="./imgs/煙火.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="ocean_wave_train">
+        <div class="ocean_wave"></div>
+    </div>
+
+
+    </div>
+    <div class="all_color">
+        <div class="input_froms">
+            <div class="container" id="input_froms_scroll">
+                <div class="form">
+                    <p>FORM</p><img class="turtle" src="./imgs/turtle.png" alt="">
+                </div>
+                <div class="input_froms_box">
+
+
+                    <div class="store">
+                        <label for="store">store<span class="show"></span></label>
+                        <div class="arrow">
+                            <input class="c_op" type="text" id="store_id" list="store_list" placeholder="placeholder text" value="" onblur="storeNull()" oninput="oneCheck()">
+
+                            <!-- /^s|1|2|3s|t|o|r|e|1|2|3$/g -->
+                            <div class="arrow_img"></div>
+                            <div class="errow errow_all"></div>
+                        </div>
+                        <datalist id="store_list">
+                        <option value="store1"></option>
+                        <option value="store2"></option>
+                        <option value="store3"></option>
+                    </datalist>
+                    </div>
+
+                    <div class="name">
+                        <label for="name">name<span class="show2"></span> </label>
+
+                        <input class="c_op" type="text" id="name_id" placeholder="placeholder text" onblur="nameNull()" oninput="twoCheck()">
+                        <div class="errow2 errow_all"></div>
+                        <!--  -->
+                        <!-- onkeyup="value=value.replace(/[^\a-\z\A-\Z\u4E00-\u9FA5]/g,'')" -->
+                    </div>
+
+
+                    <div class="phone">
+                        <label for="phone">phone <span class="show3"></span></label>
+                        <input class="c_op" type="tel" id="phone_id" placeholder="placeholder text" onblur="phoneNull() " oninput="threeCheck()">
+                        <div class="errow3 errow_all"></div>
+
+                    </div>
+                    <!-- /^09*\d{9}/gi; -->
+
+                    <div class="amount">
+                        <label for="amount">Amount of consumption <span class="show4"></span></label>
+                        <input class="c_op" type="text" id="amount_id" placeholder="placeholder text" onblur="amountNull()" onkeyup="fourCheck()">
+                        <div class="errow4 errow_all"></div>
+                        <!-- /\d/gi; -->
+                    </div>
+
+                    <div class="payment">
+                        <label for="payment">payment <span class="show5"></span></label>
+                        <div class="arrow">
+                            <select class="c_op" name="payment" id="payment_id" onblur="paymentNull()">
+                            <option  value="digital payment">digital payment</option>
+                            <option value="ATM">ATM</option>
+                            
+                        </select>
+                            <div class="errow5 errow_all"></div>
+                            <div class="arrow_img"></div>
+                        </div>
+                        <!-- <input type="text" id="payment" list="payment_list" placeholder="placeholder text">
+                        <datalist id="payment_list">
+                        <option value="digital payment"></option>
+                        <option value="ATM"></option> -->
+
+                        </datalist>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="introduce_from">
+            <div id="my_Click" class="eway_btn_2" onclick="oneCheck(),storeNull(),twoCheck(), nameNull(),threeCheck(),phoneNull(),fourCheck(),amountNull(),paymentNull(),btnClick()">
+                <img src="./imgs/submit.png" alt="" id="submit_ALL">
+
+                <div class="submit_notE">
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="icon">
+
+            <div class="icon_content_box">
+                <div class="icon_content">
+                    <div class="icon_icon">
+                        <img src="./imgs/certificateA.png" alt="">
+
+                    </div>
+                    <div class="icon_abc">
+                        <p>A</p>
+                    </div>
+                    <div class="icon_number">
+                        <p>ONE</p>
+                    </div>
+                    <div class="icon_txt">
+                        <p>dehumidifier</p>
+                    </div>
+                </div>
+                <div class="icon_content">
+                    <div class="icon_icon">
+                        <img src="./imgs/certificateA.png" alt="">
+
+                    </div>
+                    <div class="icon_abc">
+                        <p>B</p>
+                    </div>
+                    <div class="icon_number">
+                        <p>ONE</p>
+                    </div>
+                    <div class="icon_txt">
+                        <p>range hood</p>
+                    </div>
+                </div>
+                <div class="icon_content">
+                    <div class="icon_icon">
+                        <img src="./imgs/certificateA.png" alt="">
+
+                    </div>
+                    <div class="icon_abc">
+                        <p>C</p>
+                    </div>
+                    <div class="icon_number">
+                        <p>ONE</p>
+                    </div>
+                    <div class="icon_txt">
+                        <p>vacuum cleaner</p>
+                    </div>
+                </div>
+                <div class="icon_content">
+                    <div class="icon_icon">
+                        <img src="./imgs/certificateD.png" alt="">
+
+                    </div>
+                    <div class="icon_abc">
+                        <p>D</p>
+                    </div>
+                    <div class="icon_number">
+                        <p>ONE</p>
+                    </div>
+                    <div class="icon_txt">
+                        <p>toaster</p>
+                    </div>
+                </div>
+                <div class="icon_content">
+                    <div class="icon_icon">
+                        <img src="./imgs/certificateD.png" alt="">
+
+                    </div>
+                    <div class="icon_abc">
+                        <p>E</p>
+                    </div>
+                    <div class="icon_number">
+                        <p>ONE</p>
+                    </div>
+                    <div class="icon_txt">
+                        <p>scale</p>
+                    </div>
+                </div>
+                <div class="icon_content">
+                    <div class="icon_icon">
+                        <img src="./imgs/certificateD.png" alt="">
+
+                    </div>
+                    <div class="icon_abc">
+                        <p>F</p>
+                    </div>
+                    <div class="icon_number">
+                        <p>ONE</p>
+                    </div>
+                    <div class="icon_txt">
+                        <p>straightening iron</p>
+                    </div>
+                </div>
+                <div class="icon_content">
+                    <div class="icon_icon">
+                        <img src="./imgs/certificateD.png" alt="">
+
+                    </div>
+                    <div class="icon_abc">
+                        <p>G</p>
+                    </div>
+                    <div class="icon_number">
+                        <p>FIVE</p>
+                    </div>
+                    <div class="icon_txt">
+                        <p>vacuum cleaner</p>
+                    </div>
+                </div>
+                <div class="icon_content">
+                    <div class="icon_icon">
+                        <img src="./imgs/certificateD.png" alt="">
+
+                    </div>
+                    <div class="icon_abc">
+                        <p>H</p>
+                    </div>
+                    <div class="icon_number">
+                        <p>TEN</p>
+                    </div>
+                    <div class="icon_txt">
+                        <p>rice cooker</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="lighthouse">
+            <div class="lighthouse_content">
+                <div class="lighthouse_content_num">
+                    <p>13.32</p>
+                </div>
+                <div class="lighthouse_content_txt">
+                    <p>who seeks after it and wants to have it</p>
+                </div>
+                <div class="out_line_left">
+                    <div class="line_left"></div>
+                </div>
+                <div class="out_line_right">
+                    <div class="line_right"></div>
+                </div>
+
+            </div>
+            <div class="lighthouse_img">
+                <img src="./imgs/lighthouse.png" alt="">
+            </div>
+
+        </div>
+        <div class="storefront">
+            <div class="storefront_title">
+                <p>Neque porro quisquam est qui dolorem!</p>
+            </div>
+            <div class="storefront_img">
+                <img src="./imgs/market.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+
+
+</html>
